@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="699px" height="244px" viewBox="0 0 699 244" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-6" transform="translate(-29.000000, -43.000000)">
+            <g id="Group" transform="translate(29.000000, 43.000000)">
+                <rect id="Rectangle-7" fill="#34BC6E" x="0" y="1" width="326" height="126"></rect>
+                <rect id="Rectangle-7-Copy" fill="#34BC6E" x="373" y="0" width="326" height="126"></rect>
+                <text id="Click-me-Copy" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="453" y="75">Click me</tspan>
+                </text>
+                <text id="Click-me-Copy-2" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#3C9662">
+                    <tspan x="80" y="76">Click me</tspan>
+                </text>
+                <text id="Fails:-2.51" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#ED6C51">
+                    <tspan x="50" y="184">Fails: 2.51</tspan>
+                </text>
+                <text id="Pass:-AA-4.5-Pass-AA" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#3C9662">
+                    <tspan x="433" y="195">Pass: AA 4.5</tspan>
+                    <tspan x="433" y="243">Pass AAA 7.0</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

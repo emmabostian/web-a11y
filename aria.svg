@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="961px" height="85px" viewBox="0 0 961 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="IBMPlexMono, IBM Plex Mono" font-size="24" font-weight="normal">
+        <g id="Artboard-5" transform="translate(-25.000000, -312.000000)" fill="#3C9662">
+            <g id="Group-2" transform="translate(23.000000, 306.000000)">
+                <text id="&lt;label-for=“cat-name">
+                    <tspan x="0" y="25">&lt;label for=“cat-name”&gt;Cat name&lt;/label&gt;</tspan>
+                </text>
+                <text id="&lt;input-type=“text-id">
+                    <tspan x="0" y="54">&lt;input type=“text id=“cat-name” aria-describedby=“cat-name-desc” /&gt;</tspan>
+                </text>
+                <text id="&lt;p-id=“cat-name-desc">
+                    <tspan x="0" y="85">&lt;p id=“cat-name-desc”&gt;Your cat’s name must begin with a T&lt;/p&gt;</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

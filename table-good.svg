@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1043px" height="599px" viewBox="0 0 1043 599" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="IBMPlexMono, IBM Plex Mono" font-size="24" font-weight="normal">
+        <g id="Artboard-5" transform="translate(-562.000000, -486.000000)" fill="#3C9662">
+            <g id="Group-4" transform="translate(560.000000, 479.000000)">
+                <g id="Group-3-Copy">
+                    <text id="&lt;table&gt;">
+                        <tspan x="0" y="25">&lt;table&gt;</tspan>
+                    </text>
+                    <text id="&lt;thead&gt;">
+                        <tspan x="30" y="112">&lt;thead&gt;</tspan>
+                    </text>
+                    <text id="&lt;tr&gt;-copy">
+                        <tspan x="30" y="286">&lt;tr&gt;</tspan>
+                    </text>
+                    <text id="&lt;tr&gt;-copy-2">
+                        <tspan x="36" y="460">&lt;tr&gt;</tspan>
+                    </text>
+                    <text id="&lt;th-scope=“col”&gt;Cat">
+                        <tspan x="57" y="152">&lt;th scope=“col”&gt;Cat name&lt;/th&gt;</tspan>
+                    </text>
+                    <text id="&lt;td&gt;Flavio&lt;/td&gt;">
+                        <tspan x="63" y="326">&lt;td&gt;Flavio&lt;/td&gt;</tspan>
+                    </text>
+                    <text id="&lt;td&gt;Rocket&lt;/td&gt;">
+                        <tspan x="63" y="500">&lt;td&gt;Rocket&lt;/td&gt;</tspan>
+                    </text>
+                    <text id="&lt;th-scope=“col”&gt;Cat">
+                        <tspan x="57" y="185">&lt;th scope=“col”&gt;Cat age&lt;/th&gt;</tspan>
+                    </text>
+                    <text id="&lt;td&gt;12&lt;/td&gt;">
+                        <tspan x="63" y="359">&lt;td&gt;12&lt;/td&gt;</tspan>
+                    </text>
+                    <text id="&lt;td&gt;2&lt;/td&gt;">
+                        <tspan x="63" y="533">&lt;td&gt;2&lt;/td&gt;</tspan>
+                    </text>
+                    <text id="&lt;th-scope=“col”&gt;Cat">
+                        <tspan x="57" y="218">&lt;th scope=“col”&gt;Cat owner&lt;/th&gt;</tspan>
+                    </text>
+                    <text id="&lt;td&gt;Shiela&lt;/td&gt;">
+                        <tspan x="63" y="392">&lt;td&gt;Shiela&lt;/td&gt;</tspan>
+                    </text>
+                    <text id="&lt;td&gt;Ryan&lt;/td&gt;">
+                        <tspan x="63" y="566">&lt;td&gt;Ryan&lt;/td&gt;</tspan>
+                    </text>
+                    <text id="&lt;/thead&gt;">
+                        <tspan x="24" y="254">&lt;/thead&gt;</tspan>
+                    </text>
+                    <text id="&lt;/tr&gt;-copy">
+                        <tspan x="36" y="428">&lt;/tr&gt;</tspan>
+                    </text>
+                    <text id="&lt;/tr&gt;-copy-2">
+                        <tspan x="36" y="602">&lt;/tr&gt;</tspan>
+                    </text>
+                </g>
+                <text id="&lt;caption&gt;A-list-of-a">
+                    <tspan x="10" y="70">&lt;caption&gt;A list of awesome cats, their ages, and owners’ names&lt;/caption&gt;</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

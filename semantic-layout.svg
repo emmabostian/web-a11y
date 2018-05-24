@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="705px" height="475px" viewBox="0 0 705 475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-4" transform="translate(-48.000000, -78.000000)">
+            <g id="Group" transform="translate(46.000000, 71.000000)">
+                <rect id="Rectangle" stroke="#979797" x="103.5" y="19.5" width="603" height="462"></rect>
+                <text id="&lt;body&gt;" font-family="IBMPlexMono, IBM Plex Mono" font-size="24" font-weight="normal" fill="#4A4A4A">
+                    <tspan x="0" y="25">&lt;body&gt;</tspan>
+                </text>
+                <rect id="Rectangle-4" stroke="#34BC6E" stroke-width="3" x="257.5" y="84.5" width="437" height="388"></rect>
+                <text id="&lt;main&gt;" font-family="IBMPlexMono, IBM Plex Mono" font-size="24" font-weight="normal" fill="#34BC6E">
+                    <tspan x="268" y="122">&lt;main&gt;</tspan>
+                </text>
+                <rect id="Rectangle-2" fill="#34BC6E" x="109" y="25" width="593" height="44"></rect>
+                <text id="&lt;nav&gt;" font-family="IBMPlexMono, IBM Plex Mono" font-size="24" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="370" y="57">&lt;nav&gt;</tspan>
+                </text>
+                <rect id="Rectangle-3" stroke="#979797" fill="#3C9662" x="108.5" y="82.5" width="142" height="390"></rect>
+                <text id="&lt;aside&gt;" font-family="IBMPlexMono, IBM Plex Mono" font-size="24" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="122" y="257">&lt;aside&gt;</tspan>
+                </text>
+                <rect id="Rectangle-5" stroke="#3C9662" stroke-width="3" x="291.5" y="138.5" width="349" height="115"></rect>
+                <text id="&lt;section&gt;" font-family="IBMPlexMono, IBM Plex Mono" font-size="24" font-weight="normal" fill="#3C9662">
+                    <tspan x="401" y="202">&lt;section&gt;</tspan>
+                </text>
+                <rect id="Rectangle-6" fill="#CDEEDB" x="291" y="288" width="352" height="121"></rect>
+                <text id="&lt;article&gt;" font-family="IBMPlexMono, IBM Plex Mono" font-size="24" font-weight="normal" fill="#3C9662">
+                    <tspan x="402" y="362">&lt;article&gt;</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

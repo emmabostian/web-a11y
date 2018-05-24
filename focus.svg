@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1621px" height="263px" viewBox="0 0 1621 263" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-6" transform="translate(-40.000000, -514.000000)">
+            <g id="Group-5" transform="translate(40.000000, 514.000000)">
+                <g id="Group-4" transform="translate(0.000000, 15.000000)">
+                    <rect id="Rectangle-7-Copy" fill="#34BC6E" x="0" y="0" width="326" height="126"></rect>
+                    <text id="Click-me-Copy" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="80" y="75">Click me</tspan>
+                    </text>
+                    <text id="Neutral" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#4A4A4A">
+                        <tspan x="86" y="215">Neutral</tspan>
+                    </text>
+                </g>
+                <g id="Group-3" transform="translate(379.000000, 15.000000)">
+                    <rect id="Rectangle-7-Copy-2" fill="#34BC6E" x="0" y="0" width="326" height="126"></rect>
+                    <text id="Click-me-Copy-3" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="80" y="75">Click me</tspan>
+                    </text>
+                    <text id="Focus-Not-accessible" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#ED6C51">
+                        <tspan x="120.336" y="189">Focus</tspan>
+                        <tspan x="34.464" y="237">Not accessible</tspan>
+                    </text>
+                </g>
+                <g id="Group-2" transform="translate(823.000000, 0.000000)">
+                    <rect id="Rectangle-7-Copy-3" fill="#34BC6E" x="14" y="15" width="326" height="126"></rect>
+                    <text id="Click-me-Copy-4" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="94" y="90">Click me</tspan>
+                    </text>
+                    <rect id="Rectangle-8" stroke="#34BC6E" stroke-width="3" x="1.5" y="1.5" width="352" height="157"></rect>
+                    <text id="Focus-Accessible" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#34BC6E">
+                        <tspan x="117.836" y="214">Focus</tspan>
+                        <tspan x="72.284" y="262">Accessible</tspan>
+                    </text>
+                </g>
+                <g id="Group" transform="translate(1295.000000, 15.000000)">
+                    <rect id="Rectangle-7-Copy-4" fill="#3C9662" x="0" y="0" width="326" height="126"></rect>
+                    <text id="Click-me-Copy-5" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="80" y="75">Click me</tspan>
+                    </text>
+                    <text id="Focus-Accessible-Copy" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal" fill="#34BC6E">
+                        <tspan x="125.836" y="199">Focus</tspan>
+                        <tspan x="80.284" y="247">Accessible</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

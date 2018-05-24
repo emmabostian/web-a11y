@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="331px" height="321px" viewBox="0 0 331 321" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Sunflower-Light, Sunflower Light" font-size="48" font-weight="normal">
+        <g id="Artboard" transform="translate(-56.000000, -39.000000)" fill="#34BC6E">
+            <g id="Group" transform="translate(53.000000, 36.000000)">
+                <text id="perceivable">
+                    <tspan x="0" y="38">perceivable</tspan>
+                </text>
+                <text id="operable">
+                    <tspan x="160" y="133">operable</tspan>
+                </text>
+                <text id="understandable">
+                    <tspan x="0" y="228">understandable</tspan>
+                </text>
+                <text id="robust">
+                    <tspan x="164" y="323">robust</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

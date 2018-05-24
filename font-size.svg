@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="878px" height="19px" viewBox="0 0 878 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Sunflower-Light, Sunflower Light" font-weight="normal">
+        <g id="Artboard-7" transform="translate(-290.000000, -508.000000)" fill="#4A4A4A">
+            <g id="Group" transform="translate(289.000000, 506.000000)">
+                <text id="10px" font-size="10">
+                    <tspan x="0" y="18">10px</tspan>
+                </text>
+                <text id="12px" font-size="12">
+                    <tspan x="158.6" y="17">12px</tspan>
+                </text>
+                <text id="14px" font-size="14">
+                    <tspan x="322.2" y="17">14px</tspan>
+                </text>
+                <text id="16px" font-size="16">
+                    <tspan x="489.8" y="17">16px</tspan>
+                </text>
+                <text id="18px" font-size="18">
+                    <tspan x="661.4" y="16">18px</tspan>
+                </text>
+                <text id="20px" font-size="20">
+                    <tspan x="837" y="16">20px</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

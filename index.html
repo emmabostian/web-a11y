@@ -1,0 +1,596 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Accessibility</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/override.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!--Title Slide-->
+				<section class="slide">
+					<header class="slide__header">
+						<p>Emma Bostian</p>
+						<p class="slide__jobTitle">Software Engineer</p>
+					</header>
+					<div class="slide__main">
+						<h1 class="main__title no_underline">Web Accessibility</h1>
+						<h2 class="main__subtitle">How to make your web apps <span class="green">more accessible</span>.</h2>
+					</div>
+				</section>
+
+				<!--Introduction Title Slide-->
+				<section class="slide">
+					<section class="slide">
+						<div class="slide__main">
+							<h2 class="main__title">Introduction</h2>
+						</div>
+					</section>
+
+				<!--Statistics-->
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">Statistics</h1>
+					</header>
+					<ul class="slide__main">
+						<li class="fragment fade-up">15% of the world's population (over 1 billion people) have some form of disability</li>
+						<li class="fragment fade-up">285 million people are estimated to be visually impaired</li>
+						<li class="fragment fade-up">39 million of those are estimated to be blind</li>
+						<li class="fragment fade-up">246 million people are estimated to have low-vision</li>
+						<li class="fragment fade-up">260 million people worldwide have disabled hearing loss</li>
+					</ul>
+				</section>
+
+				<section class="slide full-page-img">
+					<img src="./got.png" alt="Game of Thrones">
+				</section>
+
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">Examples of Horrible A11Y</h1>
+					</header>
+					<div class="left">
+						<ul class="slide__main">
+							<li class="fragment fade-up">Uses <span class="code">&lt;div&gt;</span> to wrap key landmarks</li>
+							<li class="fragment fade-up">Images do not have <span class="code">alt</span> attributes</li>
+							<li class="fragment fade-up">Multiple fonts, some of which are not accessible</li>
+							<li class="fragment fade-up">Not responsive</li>
+						</ul>
+					</div>
+					<div class="right">
+						<img src="./george-rr-martin.png" alt="George RR Martin" class="split-img">
+					</div>
+				</section>
+
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">Examples of ...No Accessibility</h1>
+					</header>
+					<div class="left">
+						<ul class="slide__main">
+							<li class="fragment fade-up">...?</li>
+							<li class="fragment fade-up">Everything is wrapped in a <span class="code">&lt;div&gt;</span></li>
+							<li class="fragment fade-up">Font size is illegible</li>
+							<li class="fragment fade-up">Not responsive</li>
+						</ul>
+					</div>
+					<div class="right">
+						<img src="./wtf.png" alt="WTF" class="split-img">
+					</div>
+				</section>
+
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">Examples of Great A11Y</h1>
+					</header>
+					<div class="left">
+						<ul class="slide__main">
+							<li class="fragment fade-up">Use semantic HTML</li>
+							<li class="fragment fade-up">Have ARIA labels for icons</li>
+							<li class="fragment fade-up">Using SVG</li>
+							<li class="fragment fade-up">Responsive</li>
+							<li class="fragment fade-up">Keyboard navigable</li>
+						</ul>
+					</div>
+					<div class="right">
+						<img src="./airbnb.png" alt="Airbnb" class="split-img">
+					</div>
+				</section>
+			</section>
+			<!--Introduction Title Slide-->
+			<section class="slide">
+				<section class="slide">
+					<div class="slide__main">
+						<h2 class="main__title">WCAG</h2>
+					</div>
+				</section>
+
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">WCAG</h1>
+					</header>
+					<div class="left">
+						<ul class="slide__main">
+							<li class="fragment fade-up">Web Content Accessibility Guidelines</li>
+							<li class="fragment fade-up">Published by the Web Accessibility Initiative (WAI) of the World Wide Web Consortium (W3C)</li>
+						</ul>
+					</div>
+					<div class="right">
+						<img src="./wcag.png" alt="WCAG" class="split-img">
+					</div>
+				</section>
+	
+	
+				<!--WCAG Guidelines-->
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">WCAG Guidelines</h1>
+					</header>
+					<div class="full-page-img wcag-center">
+						<img src="./wcag-words.svg" alt="WCAG" class="wcag-words">
+					</div>
+				</section>
+	
+				<!--WCAG Perceivable-->
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">Perceivable</h1>
+					</header>
+					<div class="slide__main">
+						<p class="tagline">Information and user interface components must be presentable to users in ways they can perceive.</p>
+						<ul>
+							<li class="fragment fade-up">Text alternatives must be provided for any non-text content </li>
+							<li class="fragment fade-up">Time-based media must have alternatives; captions, audio descriptions</li>
+							<li class="fragment fade-up">Create content that can be presented in different ways without losing information or structure</li>
+							<li class="fragment fade-up">Make it easier for users to see and hear content including separating foreground from background</li>
+						</ul>
+					</div>
+				</section>
+	
+				<!--WCAG Operable-->
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">Operable</h1>
+					</header>
+					<div class="slide__main">
+						<p class="tagline">User interface components and navigation must be operable.</p>
+						<ul>
+							<li class="fragment fade-up">Make all functionality available from a keyboard; no keyboard traps</li>
+							<li class="fragment fade-up">Provide users enough time to read and use content</li>
+							<li class="fragment fade-up">Do not design content in a way that is known to cause seizures</li>
+							<li class="fragment fade-up">Provide ways to help users navigate, find content, and determine where they are</li>
+						</ul>
+					</div>
+				</section>
+
+				<!--WCAG Understandable-->
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">Understandable</h1>
+					</header>
+					<div class="slide__main">
+						<p class="tagline">Information and the operation of user interface must be understandable.</p>
+						<ul>
+							<li class="fragment fade-up">Make text content readable and understandable</li>
+							<li class="fragment fade-up">Make web pages appear and operate in predictable ways: on focus, on input, consistent navigation</li>
+							<li class="fragment fade-up">Help users avoid and correct mistakes: error identification, labels or instructions, error suggestions, etc.</li>
+						</ul>
+					</div>
+				</section>
+
+				<!--WCAG Robust-->
+				<section class="slide">
+					<header class="slide__header">
+						<h1 class="slide__header--title">Robust</h1>
+					</header>
+					<div class="slide__main">
+						<p class="tagline">Content must be robust enough that it can be interpreted reliably by a wide variety of user agents.</p>
+						<ul>
+							<li class="fragment fade-up">Maximize compatibility with current and future user agents, including assistive technologies</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+
+
+				<section class="slide">
+					<!--Semantic HTML Title Slide-->
+					<section class="slide">
+						<div class="slide__main">
+							<h2 class="main__title">Semantic HTML</h2>
+						</div>
+					</section>
+
+					<!--Semantic HTML-->
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Semantic HTML</h1>
+						</header>
+						<div class="left">
+							<ul class="slide__main">
+								<li class="fragment fade-up">The use of intrinsic HTML elements to reinforce the meaning of information in a web page</li>
+								<li class="fragment fade-up">Better page performance</li>
+								<li class="fragment fade-up">Enhanced SEO rankings</li>
+								<li class="fragment fade-up">Mobile optimizations</li>
+								<li class="fragment fade-up">Built-in functionality</li>
+								<li class="fragment fade-up">Screen reader compatibility</li>
+							</ul>
+						</div>
+						<div class="right">
+							<img src="./html-elements.svg" alt="html elements" class="split-img html-elements">
+						</div>
+					</section>
+
+					<!--Semantic HTML Example-->
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Bad Practice</h1>
+						</header>
+					  <div class="full-page-img">
+								<img src="./bad-code.svg" alt="Bad">
+						</div>
+					</section>
+
+					<!--Semantic HTML Example 2-->
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Good Practice</h1>
+						</header>
+						<div class="full-page-img">
+								<img src="./good-code.svg" alt="Good" class="good-code">
+						</div>
+					</section>
+
+					<!--Semantic HTML Example 2-->
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Semantic Layout</h1>
+						</header>
+						<div class="full-page-img">
+								<img src="./semantic-layout.svg" alt="Good" class="semantic-layout">
+						</div>
+					</section>
+
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Semantic Navigation</h1>
+						</header>
+						<div class="left">
+							<ul class="slide__main">
+								<li class="fragment fade-up">Use an unordered list</li>
+								<li class="fragment fade-up">Convey the menu structure</li>
+							</ul>
+						</div>
+						<div class="right">
+							<img src="./nav.svg" alt="html elements" class="split-img html-elements" id="semantic-nav">
+						</div>
+					</section>
+				</section>
+
+				<!--Keyboard navigation-->
+				<section class="slide">
+					<!--Keyboard navigation Title Slide-->
+					<section class="slide">
+						<div class="slide__main">
+							<h2 class="main__title">Keyboard Navigation</h2>
+						</div>
+					</section>
+
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Keyboard Navigation</h1>
+						</header>
+						<div class="slide__main">
+							<p class="tagline">When using semantic HTML, elements should be navigable by default.</p>
+							<ul>
+								<li class="fragment fade-up">Never use a div styled as a button</li>
+								<li class="fragment fade-up">Can you complete all tasks with keyboard? No? USELESS.</li>
+								<li class="fragment fade-up">Can they submit form on Enter? No? USELESS.</li>
+								<li class="fragment fade-up">If you need to add explicit focus to an element, use tabindex</li>
+							</ul>
+						</div>
+					</section>
+	
+					<!--Tabindex-->
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Tabindex</h1>
+						</header>
+						<div class="slide__main">
+							<p class="tagline">The tabindex attribute indicates if an element can be focused and where it participates in sequential keyboard navigation.</p>
+							<ul>
+								<li class="fragment fade-up"><span class="green">tabindex="-1"</span> The element should be focusable, but should not be reachable via sequential keyboard navigation</li>
+								<li class="fragment fade-up"><span class="green">tabindex="0"</span> The element should be focusable in sequential keyboard navigation, but its order is defined by the document's source order</li>
+								<li class="fragment fade-up"><span class="green">tabindex="1"</span> A positive value means the element should be focusable in sequential keyboard navigation, with its order defined by the value of the number</li>
+								<li class="fragment fade-up">If multiple elements share the same positive tabindex value, their order relative to each other follows their position in the document source</li>
+							</ul>
+						</div>
+					</section>
+				</section>	
+
+
+				<!--ARIA-->
+				<section class="slide">
+					<section class="slide">
+						<div class="slide__main">
+							<h2 class="main__title">ARIA</h2>
+						</div>
+					</section>
+
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">ARIA</h1>
+						</header>
+						<div class="slide__main">
+							<p class="tagline"> WAI-ARIA is a technology that can help with such problems by adding in further semantics that browsers and assistive technologies can recognize and use to let users know what is going on.</p>
+							<ul>
+								<li class="fragment fade-up"><span class="green">aria-label</span> Used to define a string that labels the current element. Use it in cases where a text label is not visible on the screen.</li>
+								<li class="fragment fade-up"><span class="green">aria-labelledby</span> Contains the element IDs of labels in objects such as input elements, widgets, and groups. The attribute establishes relationships between objects and their labels. Assistive technology, such as screen readers, use this attribute to catalog the objects in a document so that users can navigate between them.</li>
+								<li class="fragment fade-up"><span class="green">aria-describedby</span> Used to indicate the IDs of the elements that describe the object. It is used to establish a relationship between widgets or groups and text that described them.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">ARIA</h1>
+						</header>
+						<div class="full-page-img">
+								<img src="./aria.svg" alt="aria">
+						</div>
+					</section>
+				</section>
+
+				<!--Data Tables-->
+				<section class="slide">
+					<section class="slide">
+						<div class="slide__main">
+							<h2 class="main__title">Data Tables</h2>
+						</div>
+					</section>
+
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Bad Data Table</h1>
+						</header>
+						<div class="full-page-img">
+								<img src="./table-bad.svg" alt="aria" class="table-bad">
+						</div>
+					</section>	
+
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Great Data Table</h1>
+						</header>
+						<div class="full-page-img">
+								<img src="./table-good.svg" alt="aria" class="table-good">
+						</div>
+					</section>	
+
+					<section class="slide">
+						<header class="slide__header">
+							<h1 class="slide__header--title">Data Tables</h1>
+						</header>
+						<ul class="slide__main">
+							<li>You should always include thead and tbody</li>
+							<li class="fragment fade-up">Captions provided for additional information</li>
+							<li class="fragment fade-up">Scope attribute tells browsers and screen readers about relationships between thead and td</li>
+						</ul>
+					</section>
+				</section>
+
+				<!--Media content-->
+					<section class="slide">
+						<section class="slide">
+							<div class="slide__main">
+								<h2 class="main__title">Media Content</h2>
+							</div>
+						</section>
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Media Content</h1>
+							</header>
+							<div class="slide__main">
+								<p class="tagline">Charts and graphs must be accessible.</p>
+								<ul>
+									<li>Bar or pie charts can use aria-describedby</li>
+									<li class="fragment fade-up">Line charts require data download to CSV</li>
+								</ul>
+							</div>
+						</section>
+					</section>
+
+					<!--Color Contrast-->
+					<section class="slide">
+						<section class="slide">
+							<div class="slide__main">
+								<h2 class="main__title">Color Contrast</h2>
+							</div>
+						</section>
+
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Color Contrast</h1>
+							</header>
+							<ul class="slide__main">
+								<li>How high the contrast for text in specific sizes and width on a specific background color is</li>
+								<li class="fragment fade-up">Ranges from 1:1(colors are the same) to 21:1 (colors are complete opposites)</li>
+								<li class="fragment fade-up">WCAG 2.0 AA requires color contrast of 4:5:1</li>
+								<li class="fragment fade-up">Chrome Canary provides a color contrast checker</li>
+							</ul>
+						</section>
+
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Color Contrast Example</h1>
+							</header>
+							<div class="full-page-img">
+									<img src="./contrast.svg" alt="aria" class="color-contrast">
+							</div>
+						</section>	
+
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Button Focus Example</h1>
+							</header>
+							<div class="full-page-img">
+									<img src="./focus.svg" alt="aria">
+							</div>
+						</section>	
+					</section>
+
+					<!--Text content-->
+					<section class="slide">
+						<section class="slide">
+							<div class="slide__main">
+								<h2 class="main__title">Text Content</h2>
+							</div>
+						</section>
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Typography</h1>
+							</header>
+							<ul class="slide__main">
+								<li>Use OS native fonts: Tahoma, Times New Roman, and Arial</li>
+								<li class="fragment fade-up">Categorized into buckets (families) based on characteristics</li>
+								<ul class="sub-list">
+									<li class="fragment fade-up">Serif</li>
+									<li class="fragment fade-up">Sans-serif</li>
+									<li class="fragment fade-up">Cursive</li>
+									<li class="fragment fade-up">Monospace</li>
+								</ul>
+								<li class="fragment fade-up">Verdana is a great choice for typography as its characters have unique shapes, and the spacing between letters is much clearer than Arial</li>
+							</ul>
+						</section>
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Font Size</h1>
+							</header>
+							<ul class="slide__main">
+								<li>Text must be large enough for reading on mobile devices and tablets</li>
+								<li class="fragment fade-up">Standard font size has grown from the old standard of 12px</li>
+							</ul>
+						</section>
+
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Font Size Example</h1>
+							</header>
+							<div class="slide__main">
+								<img src="./font-size.svg" alt="Text example">
+							</div>
+						</section>
+
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Line Height</h1>
+							</header>
+							<ul class="slide__main">
+								<li>The browser default for line-height is approximately 1.2, however according to WCAG, line-height should be at least 1.5 within paragraphs</li>
+							</ul>
+						</section>
+
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Line Height Example</h1>
+							</header>
+							<div class="slide__main">
+								<img src="./line-height.svg" alt="Text example" class="line-height">
+							</div>
+						</section>
+					</section>
+
+					<section class="slide">
+						<section class="slide">
+							<div class="slide__main">
+								<h2 class="main__title">How Can We Use This At LMI?</h2>
+							</div>
+						</section>
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">LMI</h1>
+							</header>
+							<div class="slide__main">
+								<ul>
+									<li>Plan your sprints with a11y in mind</li>
+									<li class="fragment fade-up">Actively check colleagues code for a11y blunders</li>
+									<li class="fragment fade-up">Test in HCM, keyboard navigation, screen readers</li>
+									<li class="fragment fade-up">Use semantic HMTL for your content</li>
+									<li class="fragment fade-up">Test responsiveness</li>
+									<li class="fragment fade-up">Use accessible colors</li>
+								</ul>
+							</div>
+						</section>
+					</section>	
+
+					<section class="slide">
+						<section class="slide">
+							<div class="slide__main">
+								<h2 class="main__title">Resources</h2>
+							</div>
+						</section>
+						<section class="slide">
+							<header class="slide__header">
+								<h1 class="slide__header--title">Resources</h1>
+							</header>
+							<ul class="slide__main">
+								<li>Screen reader for Chrome: <a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en">Chromevox</a></li>
+								<li>Chrome plug-in for visual impairment simulation: <a href="https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl">No Coffee</a></li>
+								<li>Web accessibility page analyzer: <a href="http://wave.webaim.org/">Wave</a></li>
+								<li>MSDN Accessibility: <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility">Accessibility</a></li>
+								<li>WAI ARIA: <a href="https://www.w3.org/WAI/intro/aria">Overview</a></li>
+							</ul>
+						</section>
+					</section>
+
+					<section class="slide">
+						<section class="slide">
+							<div class="slide__main">
+								<h2 class="main__title">Thank You</h2>
+							</div>
+						</section>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				width: "100%",
+				height: "100%",
+				minScale: 1,
+				maxScale: 1,
+				margin: 0,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

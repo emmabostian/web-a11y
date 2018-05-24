@@ -1,0 +1,160 @@
+$green: #34bc6e
+$dark-gray: #595859
+$light-gray: #eaeaea
+$plex: 'IBM Plex Sans'
+
+*
+  box-sizing: border-box
+
+body
+  font-family: $plex
+  color: $dark-gray
+  font-size: 16px
+
+header
+  border-bottom: 5px solid $green
+  padding-bottom: 15px !important
+  width: 50px
+
+.slide
+  display: flex !important
+  flex-direction: column
+  height: 100%
+  text-align: left
+  background-color: white
+
+.slide__header
+  display: flex !important
+  flex-direction: column
+  justify-content: space-around
+  width: 100%
+  font-weight: 400
+  height: 50px
+  border-left: 5px solid $green !important
+  padding: 0 !important
+  margin: 0 !important
+  padding-left: 15px !important
+
+.slide__header--title
+  font-size: 2em !important
+
+.slide__main
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1
+
+.slide__jobTitle
+  text-transform: uppercase !important
+  font-size: .8em !important
+  font-weight: bold !important
+  
+.main__title
+  position: relative
+  font-size: 4em !important
+  margin-bottom: 50px !important
+
+.main__title::after
+  position: absolute
+  bottom: -15px
+  left: 0px
+  display: inline-block;
+  content: ""
+  border-bottom: 5px solid $green !important
+  width: 50px
+
+.main__subtitle
+  font-size: 2em !important
+
+.no_underline
+  margin-bottom: 10px !important
+
+.no_underline::after
+  content: none
+
+.reveal .slides > section, .reveal .slides > section > section
+  padding: 3rem 4rem
+  
+.green
+  color: $green
+
+.tagline
+  font-size: 2em !important
+  font-style: italic !important
+  width: 90% !important
+
+.table-bad
+  width: 500px !important
+
+.table-good
+  width: 1000px !important
+
+.line-height
+  height: 800px !important
+
+.sub-list
+  position: relative !important
+  left: 50px !important
+
+.code
+  font-family: monospace
+
+.full-page-img
+  width: 100%
+  position: absolute
+  top: 0.5px
+  left: 0px
+  justify-content: center !important
+  display: flex !important
+  height: 100% !important
+  align-items: center !important
+
+.split-img
+  height: 85% !important
+  width: auto !important
+  box-shadow: -3px 5px 5px grey !important
+  position: absolute !important
+  right: -500px !important
+  top: 155px !important
+
+#semantic-nav
+  width: 900px !important
+
+.good-code
+  height: 600px !important
+
+.semantic-layout
+  margin-top: 75px !important
+
+.html-elements
+  width: 600px !important
+  box-shadow: none !important
+  right: 250px !important
+  top: 100px !important
+
+.left
+  width: 35% !important
+  margin-top: 100px !important
+
+.wcag-words
+  height: 500px
+
+.wcag-center
+  height: 100% !important
+  display: flex !important
+
+
+ul
+  width: 90% !important
+
+li
+  font-size: 3em !important
+  margin-bottom: 20px !important
+
+img
+  width: 70vw
+
+div > p
+  position: fixed
+  top: 12%
+  font-size: 1em
